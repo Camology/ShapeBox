@@ -9,7 +9,7 @@ Vertical::Vertical(std::vector<std::unique_ptr<Shape>> & shapes)
   }
 }
 
-std::string Vertical::toPostScript() const
+std::string Vertical::printCombo() const
 {
   std::ostringstream os;
 

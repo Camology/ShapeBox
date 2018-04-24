@@ -9,7 +9,7 @@ Horizontal::Horizontal(std::vector<std::unique_ptr<Shape>> & shapes)
   }
 }
 
-std::string Horizontal::toPostScript() const
+std::string Horizontal::printCombo() const
 {
   std::ostringstream os;
 

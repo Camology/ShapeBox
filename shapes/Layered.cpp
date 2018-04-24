@@ -9,7 +9,7 @@ Layered::Layered(std::vector<std::unique_ptr<Shape>> & shapes)
   }
 }
 
-std::string Layered::toPostScript() const
+std::string Layered::printCombo() const
 {
   std::ostringstream os;
 
