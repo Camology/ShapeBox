@@ -13,8 +13,6 @@ std::string Horizontal::printCombo() const
 {
   std::ostringstream os;
 
-  os << "gsave %<horizontal> \n";
-  os << -width() / 2 << " 0  translate \n";  //center the horizontal shape 
   for (int i = 0; i < _shapes.size(); ++i)
   {
     os << _shapes[i]->toPostScript();
@@ -23,7 +21,6 @@ std::string Horizontal::printCombo() const
       os  << (_shapes[i]->width() / 2) + (_shapes[i + 1]->width() / 2) 
           << " 0 translate \n";
   }
-  os << "grestore %</horizontal> \n";
 
   return os.str();
 }
